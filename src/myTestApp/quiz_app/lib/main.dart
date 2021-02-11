@@ -4,19 +4,31 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp> {
+  var qustion_num = 0;
+
   void answerQ() {
+    setState(() {
+      qustion_num++;
+    });
     print('clicked');
   }
 
   @override
   Widget build(BuildContext context) {
     var qoustion = ["whats is your favorite color", "what isyou pets name"];
-    var qustion_num = 0;
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("walslaks"),
+          title: Text("1st App"),
         ),
         body: Column(
           children: [
