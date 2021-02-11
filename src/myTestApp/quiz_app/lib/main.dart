@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("wallaks"),
+          title: Text("walslaks"),
         ),
         body: Column(
           children: [
